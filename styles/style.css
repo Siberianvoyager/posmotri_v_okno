@@ -9,13 +9,16 @@ html {
 }
 
 .page {
-  inline-size: 1200px;
-  block-size: 100%;
+  display: flex;
+  align-items: center;
   margin: auto;
   color: #fff;
+  width: 1200px;
   font-family: 'Fira Sans Condensed', sans-serif;
   font-size: 18px;
   background-color: #1b1919;
+  inline-size: 1200px;
+  block-size: 100%;
 }
 
 h1,
@@ -37,23 +40,6 @@ ol {
   list-style: none;
 }
 
-
-.page {
-  display: flex;
-  align-items: center;
-  margin: auto;
-  color: #fff;
-  width: 1200px;
-  height: 800px;
-  font-family: 'Fira Sans Condensed', sans-serif;
-  font-size: 18px;
-  background-color: #1b1919;
-  inline-size: 1200px;
-  block-size: 100%;
-}
-
-
-
 .content {
   display: flex;
   justify-content: center;
@@ -62,18 +48,16 @@ ol {
   margin: 133px 30px;
   inline-size: 100%;
   width: 1140px;
-  height: 534px;
+ 
 }
 
 .content__list {
   position: relative;
   display: flex;
-  height: 103px;
   overflow-y: scroll;
   flex-direction: column;
-  gap: 30px;
+
   block-size: 298px;
-  scrollbar-width: none;
 }
 
 .content__details {
@@ -98,14 +82,8 @@ ol {
   color: #545050;
 }
 
-
-
-.content__list::-webkit-scrollbar {
-  display: none;
-}
-
 .content__list-item:not(:last-child) {
-  margin: 0 0 1px;
+  margin-bottom: 30px;
 }
 
 .content__card-link {
@@ -113,8 +91,6 @@ ol {
   margin: 2px;
   text-decoration: none;
 }
-
-
 
 .content__card-link:active {
   background-color: #545050;
@@ -166,10 +142,8 @@ ol {
   object-position: center;
 }
 
-
 .result {
   align-self: flex-end;
-  width: 711px;
 }
 
 .result__video {
@@ -183,9 +157,9 @@ ol {
     position: relative;
     inline-size: 711px;
     margin: 0 0 16px;
+    height: 386px;
   }
   
-
 .button {
   border: 1px solid #FFF;
   padding: 6px 0;
@@ -198,6 +172,7 @@ ol {
   cursor: pointer;
   inline-size: 100%;
 }
+
 
 .button:active {
   background-color: #545050;
@@ -214,10 +189,6 @@ ol {
 .button:focus-visible {
   outline: 1px solid #FFF;
   outline-offset: 1px;
-}
-
-.more-button {
-  background-color: transparent;
 }
 
 .search-form {
@@ -239,8 +210,6 @@ ol {
   font-size: 18px;
 }
 
-
-
 .search-form__label {
   display: flex;
   align-items: center;
@@ -257,7 +226,6 @@ ol {
   position: absolute;
   white-space: nowrap;
 }
-
 
 .search-form__label:hover {
   text-decoration: underline 1px #FFF;
@@ -298,10 +266,6 @@ ol {
   outline: none;
 }
 
-.search-form__textfield:focus-visible {
-  outline: none;
-}
-
 .search-form__checkbox-list {
   display: flex;
   gap: 15px;
@@ -322,8 +286,6 @@ ol {
   block-size: 15px;
   margin: 1px 0 0 1px;
 }
-
-
 
 .search-form__submit-button {
   align-self: flex-end;
